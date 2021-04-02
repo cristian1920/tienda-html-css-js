@@ -6,6 +6,7 @@ body {
 .page-nav {
     background-color: #2196f3;
     border:1px solid black;
+    position: relative;
 
 }
 .page-nav h1 {
@@ -15,24 +16,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border:1px solid red;
+    border:1px solid green;
 }
-
- .button-add {
-     transition-duration: 0.4s;
-         
-    }
-      
-  .button-add:hover {
-        background-color: #4CAF50; /* Green */
-        color: white;
-    
-    }
-
 
 .product-container{
     margin: 15px;
     padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
 }
 .product-container:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -40,3 +32,49 @@ body {
 .product-container img {
     width: 300px;
 }
+
+.product-container h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+} 
+button{
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 15px;
+    
+} 
+.button-checkout{
+    background-color: white;
+    color: black;
+    border: 2px solid  #2196f3;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+        
+   
+}
+.button-checkout:hover {
+    background-color: #2196f3; /* blue */
+    color: white;
+    border: 2px solid  black;
+
+}
+.button-add {
+    background-color: white;
+    color: green;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+        
+   }
+     
+ .button-add:hover {
+       background-color: #4CAF50; /* Green */
+       color: white;
+
+   }
