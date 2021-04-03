@@ -9,6 +9,7 @@ body {
     position: relative;
 
 }
+
 .page-nav h1 {
     margin: 20px;
 }
@@ -56,6 +57,16 @@ button{
         
    
 }
+
+header, main, footer {
+    padding-left: 300px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
 .button-checkout:hover {
     background-color: #2196f3; /* blue */
     color: white;
